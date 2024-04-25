@@ -601,60 +601,10 @@ function prepareSideNav(main) {
 }
 
 /**
- * loads everything needed to get to LCP.
- */
-async function loadEager(doc) {
-  setLanguageForAccessibility('en');
-  customDecorateTemplateAndTheme();
-
-  await window.hlx.plugins.run('loadEager');
-
-  // labs banner
-  const labs = getMetadata('labs');
-  if (labs) {
-    const labsBanner = buildBlock('labs', labs);
-    const h1 = document.querySelector('h1');
-    if (h1) {
-      // insert above title
-      h1.parentElement.insertBefore(labsBanner, h1);
-    } else {
-      // insert at top of page
-      document.querySelector('main > div').append(labsBanner);
-    }
-  }
-
-  // deprecation banner
-  const deprecation = getMetadata('deprecation');
-  if (deprecation) {
-    const deprecationBanner = buildBlock('deprecation', deprecation);
-    const h1 = document.querySelector('h1');
-    if (h1) {
-      // insert above title
-      h1.parentElement.insertBefore(deprecationBanner, h1);
-    } else {
-      // insert at top of page
-      document.querySelector('main > div').append(deprecationBanner);
-    }
-  }
-
-  const main = doc.querySelector('main');
-  if (main) {
-    decorateMain(main);
-    decorateBreadcrumb(main);
-    prepareSideNav(main);
-    document.body.classList.add('appear');
-    await waitForLCP(LCP_BLOCKS);
-  }
-}
-
-/**
  * loads everything that doesn't need to be delayed.
  */
 async function loadLazy(doc) {
   const main = doc.querySelector('main');
-
-  // NOTE:'.redesign' class is needed for the redesign styles, keep this
-  document.body.classList.add('redesign');
 
   await loadBlocks(main);
   addBlockLevelInViewAnimation(main);
@@ -708,9 +658,7 @@ function loadDelayed() {
  * Decorates the page.
  */
 async function loadPage(doc) {
-  await window.hlx.plugins.load('eager');
-  await loadEager(doc);
-  await window.hlx.plugins.load('lazy');
+  // await window.hlx.plugins.load('lazy');
   await loadLazy(doc);
   loadDelayed(doc);
 }
@@ -722,8 +670,5 @@ if (window.location.hostname === 'www.hlx.live') {
   console.log(`redirecting to ${url}`);
 }
 */
-
-if (!window.hlx.init) {
-  loadPage(document);
-  window.hlx.init = true;
-}
+window.hlx.init = true;
+loadPage(document);

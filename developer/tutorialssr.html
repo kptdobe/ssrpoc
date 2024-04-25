@@ -1,4 +1,4 @@
-<html lang="en" style="margin-top: 49px;">
+<html lang="en">
 
 <head>
   <title>Getting Started - Developer Tutorial</title>
@@ -22,138 +22,14 @@
   <meta name="template" content="guides">
   <meta name="category" content="Build"><!-- v7 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <script src="/scripts/lib-franklin.js" type="module"></script>
-  <script src="/scripts/scripts.js" type="module"></script> -->
+  <script src="/scripts/lib-franklin.js" type="module"></script>
+  <script src="/scripts/scriptsssr.js" type="module"></script>
   <link rel="stylesheet" href="/styles/styles.css">
-  <link rel="stylesheet" href="/blocks/video/video.css">
-  <link rel="stylesheet" href="/blocks/pagination/pagination.css">
-  <link rel="stylesheet" href="/blocks/header/header.css">
-  <link rel="stylesheet" href="/blocks/footer/footer.css">
-  <link rel="stylesheet" href="/styles/lazy-styles.css">
-  <link rel="stylesheet" href="/blocks/side-navigation/side-navigation.css">
-  <link rel="stylesheet" href="/libs/highlight/atom-one-dark.min.css">
-  <!-- <script src="/libs/highlight/highlight.min.js"></script> -->
 </head>
 
-<body class="guides-template appear redesign"><helix-sidekick pushdown="49"></helix-sidekick>
-  <header class="header-wrapper">
-    <div class="header block" data-block-name="header" data-block-status="loaded">
-      <div>
-        <div></div>
-      </div>
-      <div class="gnav-curtain"></div>
-      <div class="gnav-wrapper franklin">
-        <nav class="gnav"><button class="gnav-toggle" aria-label="Navigation menu" aria-expanded="false"></button>
-          <div class="gnav-brand-wrapper"><a href="https://www.aem.live/home"
-              class="gnav-brand link-highlight-colorful-effect-hover-wrapper"><img loading="lazy" alt="Adobe" width="27"
-                height="27" src="/blocks/header/adobe-franklin-logo.svg"><span
-                class="link-highlight-colorful-effect">Adobe Experience Manager</span></a></div>
-          <div class="gnav-mainnav with-search">
-            <div class="gnav-navitem has-menu"><a href="/docs" role="button" aria-expanded="false"
-                aria-controls="navmenu-0" aria-label="Documentation Submenu">Documentation</a>
-              <div class="submenu-wrapper" id="navmenu-0">
-                <div class="submenu-content"><a class="navmenu-info link-highlight-colorful-effect-hover-wrapper"
-                    href="https://www.aem.live/docs" target="_self">
-                    <h3 class="link-highlight-colorful-effect">Documentation</h3>
-                    <p>Learn how to build, publish, and launch your site with Adobe Experience Manager.</p><img
-                      loading="lazy" alt=""
-                      src="./media_1efffe0288d261803d829a5fbc7f0d34748e6dacc.png?width=750&amp;format=png&amp;optimize=medium"
-                      width="1463" height="1097">
-                  </a><a href="/docs#build"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_self">
-                    <div class="icon-wrapper colored-tag circle lightgreen"><span
-                        class="icon icon-icon-build-colored"><img src="/img/icon-build-colored.png" alt="Build"
-                          class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Build</h3>
-                    <p class="">Everything developers need to build fast sites with Adobe Experience Manager, and how to
-                      structure content for an optimal authoring experience.</p>
-                  </a><a href="/docs#publish"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_self">
-                    <div class="icon-wrapper colored-tag circle pink"><span class="icon icon-icon-work-colored"><img
-                          src="/img/icon-work-colored.png" alt="Publish" class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Publish</h3>
-                    <p class="">The in-depth guide for authors looking to create, publish, and manage content with Adobe
-                      Experience Manager.</p>
-                  </a><a href="/docs#launch"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_self">
-                    <div class="icon-wrapper colored-tag circle purple"><span class="icon icon-icon-world-colored"><img
-                          src="/img/icon-world-colored.png" alt="Launch" class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Launch</h3>
-                    <p class="">Get ready to launch with our resources for operating your site with DNS, CDN, and SEO.
-                    </p>
-                  </a></div>
-              </div>
-            </div>
-            <div class="gnav-navitem has-menu"><a href="/docs/#resources" role="button" aria-expanded="false"
-                aria-controls="navmenu-1" aria-label="Resources Submenu">Resources</a>
-              <div class="submenu-wrapper" id="navmenu-1">
-                <div class="submenu-content"><a href="/docs/sidekick"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_self">
-                    <div class="icon-wrapper colored-tag circle black"><span class="icon icon-icon-sidekick"><img
-                          src="/img/icon-sidekick.png" alt="Sidekick" class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Sidekick</h3>
-                    <p class="">Install the AEM Sidekick to author and publish with Adobe Experience Manager.</p>
-                  </a><a href="/community"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_self">
-                    <div class="icon-wrapper colored-tag circle black"><span class="icon icon-icon-faq"><img
-                          src="/img/icon-faq.png" alt="Community" class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Community</h3>
-                    <p class="">The right place to ask questions, share experiences, and learn more about AEM is our
-                      online and offline community</p>
-                  </a><a href="https://www.hlx.live/docs/admin.html"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_blank">
-                    <div class="icon-wrapper colored-tag circle black"><span class="icon icon-icon-admin-html"><img
-                          src="/img/icon-admin-html.png" alt="Admin API" class="bounce-item-effect"></span></div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">Admin API</h3>
-                    <p class="">Reference documentation for the Admin API.</p>
-                  </a><a href="https://www.aemstatus.net"
-                    class="submenu link-highlight-colorful-effect-hover-wrapper bounce-item-effect-hover-wrapper"
-                    target="_blank">
-                    <div class="icon-wrapper colored-tag circle black"><span class="icon icon-icon-status-live"><img
-                          src="/img/icon-status-live.png" alt="www.aemstatus.net" class="bounce-item-effect"></span>
-                    </div>
-                    <h3 class="link-highlight-colorful-effect submenu-title">www.aemstatus.net</h3>
-                    <p class="">Check if Adobe Experience Manager sites are available right now and confirm service
-                      level availability.</p>
-                  </a></div>
-              </div>
-            </div>
-            <div class="gnav-cta-button-wrapper mobile"><a href="/developer/tutorial" class="gnav-cta-button button"
-                aria-label="Create your site"><span>Create your site</span></a></div>
-          </div>
-          <div class="gnav-cta-button-wrapper desktop"><a href="/developer/tutorial" class="gnav-cta-button button"
-              aria-label="Create your site"><span>Create your site</span></a></div>
-          <div class="profile"></div>
-          <div class="gnav-search"><button class="gnav-search-button" aria-label="Search" aria-expanded="false"
-              aria-controls="gnav-search-bar"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                focusable="false">
-                <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5
-16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z">
-                </path>
-              </svg></button>
-            <aside id="gnav-search-bar" class="gnav-search-bar">
-              <div class="gnav-search-field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                  focusable="false">
-                  <path d="M14 2A8 8 0 0 0 7.4 14.5L2.4 19.4a1.5 1.5 0 0 0 2.1 2.1L9.5
-16.6A8 8 0 1 0 14 2Zm0 14.1A6.1 6.1 0 1 1 20.1 10 6.1 6.1 0 0 1 14 16.1Z">
-                  </path>
-                </svg><button class="clear-results-button">✕</button><input class="gnav-search-input"
-                  placeholder="Search"></div>
-              <div class="gnav-search-results"></div>
-            </aside>
-          </div>
-          <div class="mobile-curtain-area"></div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main class="without-full-width-hero">
+<body class="guides-template appear">
+  <header></header>
+  <main>
     <div class="breadcrumb-wrapper">
       <div class="breadcrumb contained">
         <div>
@@ -169,102 +45,9 @@
         </div>
       </div>
     </div>
-    <aside class="side-navigation-wrapper ready">
-      <div class="search-input-wrapper"><input type="text" name="search" placeholder="Search..."></div>
-      <div class="side-navigation-overlay-btn-wrapper in-doc-page">
-        <div class="guides-back-btn">
-          <span class="icon icon-icon-arrow"></span>
-          <a href="/docs/" class="link-underline-effect">
-            Back
-          </a>
-        </div><button class="documentation-btn"><span class="icon icon-icon-caret-down"></span>Menu</button>
-      </div>
-      <div class="side-navigation block" data-block-name="side-navigation" data-block-status="loaded">
-        <div class="search-input-wrapper" data-dashlane-rid="eecf0bac8489adc8" data-form-type=""><input type="text"
-            name="search" placeholder="Search..." data-dashlane-rid="3aebd728d8a86911" data-form-type=""></div>
-        <div class="side-navigation-overlay-btn-wrapper"><button class="back-btn">Back</button></div><a
-          class="skip-link" href="#search-results" target="_self">Skip to results</a>
-        <div>
-          <div>
-            <ul>
-              <li class="list-section"><a href="/docs#build" class="heading" target="_self">Build</a>
-                <ul class="list-section-inner">
-                  <li><a href="/developer/tutorial" class="active" target="_self">Getting Started - Developer
-                      Tutorial</a></li>
-                  <li><a href="/developer/anatomy-of-a-franklin-project" target="_self">Anatomy of a Project</a></li>
-                  <li><a href="/developer/block-collection" target="_self">Block Collection</a></li>
-                  <li><a href="/developer/spreadsheets" target="_self">Spreadsheets</a></li>
-                  <li><a href="/developer/indexing" target="_self">Indexing</a></li>
-                  <li><a href="/developer/keeping-it-100" target="_self">Keeping it 100</a></li>
-                  <li><a href="/developer/markup-sections-blocks" target="_self">Markup - Sections</a></li>
-                  <li><a href="/developer/favicon" target="_self">Favicon</a></li>
-                  <li><a href="/docs/custom-headers" target="_self">Custom Headers</a></li>
-                  <li><a href="https://www.aem.live/docs/dev-collab-and-good-practices" target="_self">Best Practices
-                      for Developers</a></li>
-                </ul>
-              </li>
-              <li class="list-section"><a href="/docs#publish" class="heading" target="_self">Publish</a>
-                <ul class="list-section-inner">
-                  <li><a href="/docs/authoring" target="_self">Authoring</a></li>
-                  <li><a href="/docs/bulk-metadata" target="_self">Bulk Metadata</a></li>
-                  <li><a href="/docs/placeholders" target="_self">Placeholders</a></li>
-                  <li><a href="/developer/sitemap" target="_self">Sitemap</a></li>
-                  <li><a href="/docs/setup-customer-sharepoint" target="_self">SharePoint Setup</a></li>
-                </ul>
-              </li>
-              <li class="list-section"><a href="/docs#launch" class="heading" target="_self">Launch</a>
-                <ul class="list-section-inner">
-                  <li><a href="/docs/go-live-checklist" target="_self">Go Live Checklist</a></li>
-                  <li><a href="/docs/setup-byo-cdn-push-invalidation" target="_self">Push Invalidation</a></li>
-                  <li><a href="/docs/byo-cdn-cloudflare-worker-setup" target="_self">Cloudflare Worker Setup</a></li>
-                  <li><a href="/docs/byo-cdn-akamai-setup" target="_self">Akamai Setup</a></li>
-                  <li><a href="/docs/byo-cdn-fastly-setup" target="_self">Fastly Setup</a></li>
-                  <li><a href="/docs/byo-dns" target="_self">No CDN Setup</a></li>
-                  <li><a href="/docs/redirects" target="_self">Redirects</a></li>
-                </ul>
-              </li>
-              <li class="list-section"><a href="/docs#resources" class="heading" target="_self">Resources</a>
-                <ul class="list-section-inner">
-                  <li class="side-navigation-nested-target collapse"><button class="">
-                      <span>Sidekick</span>
-                      <span class="icon icon-icon-caret-down"></span>
-                    </button>
-                    <ul class="list-section-inner-nested">
-                      <li><a href="/docs/sidekick" target="_self">Using Sidekick</a></li>
-                      <li><a href="/docs/sidekick-extension" target="_self">Installing Extension</a></li>
-                      <li><a href="/tools/sidekick/" target="_self">Project Configurator</a></li>
-                      <li><a href="/docs/sidekick-library" target="_self">Sidekick Library</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="/docs/faq" target="_self">FAQ</a></li>
-                  <li><a href="https://www.hlx.live/docs/admin.html" target="_blank">Admin API<span
-                        class="icon icon-icon-caret-right"></span></a></li>
-                  <li><a href="https://www.aemstatus.net" target="_blank">AEM Status<span
-                        class="icon icon-icon-caret-right"></span></a></li>
-                  <li class="side-navigation-nested-target collapse"><button class="">
-                      <span>Tools</span>
-                      <span class="icon icon-icon-caret-down"></span>
-                    </button>
-                    <ul class="list-section-inner-nested">
-                      <li><a
-                          href="https://chrome.google.com/webstore/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo"
-                          target="_blank">Sidekick Chrome Extension<span class="icon icon-icon-caret-right"></span></a>
-                      </li>
-                      <li><a href="https://github.com/apps/aem-code-sync" target="_blank">Github Bot<span
-                            class="icon icon-icon-caret-right"></span></a></li>
-                      <li><a href="/docs/auditlog" target="_self">Audit Log</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="results-wrapper" id="search-results"></div>
-      <div class="side-navigation-curtain"></div>
-    </aside>
-    <div class="section content video-container pagination-container" data-section-status="loaded" style="">
+    <aside></aside>
+    <div class="section content video-container pagination-container" data-section-status="initialized"
+      style="display: none;">
 
 
 
@@ -364,11 +147,11 @@
             repository template</a></h2>
       </div>
       <div class="video-wrapper">
-        <div class="video block" data-block-name="video" data-block-status="loaded">
-          <div class="vid-wrapper">
-            <video playsinline="" controls="" name="media">
-              <source src="https://www.hlx.live/developer/videos/tutorial-step1.mp4" type="video/mp4">
-            </video>
+        <div class="video block" data-block-name="video" data-block-status="initialized">
+          <div>
+            <div><a href="https://www.hlx.live/developer/videos/tutorial-step1.mp4"
+                title="https://www.hlx.live/developer/videos/tutorial-step1.mp4"
+                target="_blank">https://www.hlx.live/developer/videos/tutorial-step1.mp4</a></div>
           </div>
         </div>
       </div>
@@ -460,11 +243,11 @@
             Drive</a></h2>
       </div>
       <div class="video-wrapper">
-        <div class="video block" data-block-name="video" data-block-status="loaded">
-          <div class="vid-wrapper">
-            <video playsinline="" controls="" name="media">
-              <source src="https://www.hlx.live/developer/videos/tutorial-step2.mp4" type="video/mp4">
-            </video>
+        <div class="video block" data-block-name="video" data-block-status="initialized">
+          <div>
+            <div><a href="https://www.hlx.live/developer/videos/tutorial-step2.mp4"
+                title="https://www.hlx.live/developer/videos/tutorial-step2.mp4"
+                target="_blank">https://www.hlx.live/developer/videos/tutorial-step2.mp4</a></div>
           </div>
         </div>
       </div>
@@ -558,11 +341,11 @@
             class="anchor-link link-highlight-colorful-effect" target="_self">Preview and publish your content</a></h2>
       </div>
       <div class="video-wrapper">
-        <div class="video block" data-block-name="video" data-block-status="loaded">
-          <div class="vid-wrapper">
-            <video playsinline="" controls="" name="media">
-              <source src="https://www.hlx.live/developer/videos/tutorial-step3.mp4" type="video/mp4">
-            </video>
+        <div class="video block" data-block-name="video" data-block-status="initialized">
+          <div>
+            <div><a href="https://www.hlx.live/developer/videos/tutorial-step3.mp4"
+                title="https://www.hlx.live/developer/videos/tutorial-step3.mp4"
+                target="_blank">https://www.hlx.live/developer/videos/tutorial-step3.mp4</a></div>
           </div>
         </div>
       </div>
@@ -677,23 +460,23 @@
             functionality</a></h2>
       </div>
       <div class="video-wrapper">
-        <div class="video block" data-block-name="video" data-block-status="loaded">
-          <div class="vid-wrapper">
-            <video playsinline="" controls="" name="media">
-              <source src="https://www.hlx.live/developer/videos/tutorial-step4.mp4" type="video/mp4">
-            </video>
+        <div class="video block" data-block-name="video" data-block-status="initialized">
+          <div>
+            <div><a href="https://www.hlx.live/developer/videos/tutorial-step4.mp4"
+                title="https://www.hlx.live/developer/videos/tutorial-step4.mp4"
+                target="_blank">https://www.hlx.live/developer/videos/tutorial-step4.mp4</a></div>
           </div>
         </div>
       </div>
       <div class="default-content-wrapper">
         <p>To get started with development, it is easiest to install the AEM Command Line Interface (CLI) and clone your
           repo locally through using the following.</p>
-        <pre><code class="hljs language-bash">npm install -g @adobe/aem-cli
-git <span class="hljs-built_in">clone</span> https://github.com/&lt;owner&gt;/&lt;repo&gt;
+        <pre><code>npm install -g @adobe/aem-cli
+git clone https://github.com/&lt;owner&gt;/&lt;repo&gt;
 </code></pre>
         <p><br><br>From there change into your project folder and start your local dev environment using the following.
         </p>
-        <pre><code class="hljs language-bash"><span class="hljs-built_in">cd</span> &lt;repo&gt;
+        <pre><code>cd &lt;repo&gt;
 aem up
 </code></pre>
         <p><br><br>This opens <code>http://localhost:3000/</code> and you are ready to make changes.<br>A good place to
@@ -710,22 +493,20 @@ aem up
               with us.</a></strong></p>
       </div>
       <div class="pagination-wrapper">
-        <div class="pagination contained block" data-block-name="pagination" data-block-status="loaded">
+        <div class="pagination contained block" data-block-name="pagination" data-block-status="initialized">
           <div>
-            <div class="column left link-highlight-colorful-effect-hover-wrapper">
+            <div>
               <p><span class="icon icon-icon-arrow"><svg xmlns="http://www.w3.org/2000/svg">
                     <use href="#icons-sprite-icon-arrow"></use>
                   </svg></span>Previous</p>
-              <h3 id="build"><a href="/docs/#build" title="Build" target="_self"
-                  class="link-highlight-colorful-effect">Build</a></h3>
+              <h3 id="build"><a href="/docs/#build" title="Build" target="_self">Build</a></h3>
             </div>
-            <div class="column right link-highlight-colorful-effect-hover-wrapper">
+            <div>
               <p>Up Next<span class="icon icon-icon-arrow"><svg xmlns="http://www.w3.org/2000/svg">
                     <use href="#icons-sprite-icon-arrow"></use>
                   </svg></span></p>
               <h3 id="anatomy-of-an-aem-project"><a href="/developer/anatomy-of-a-helix-project"
-                  title="Anatomy of an AEM Project" target="_self" class="link-highlight-colorful-effect">Anatomy of an
-                  AEM Project</a></h3>
+                  title="Anatomy of an AEM Project" target="_self">Anatomy of an AEM Project</a></h3>
             </div>
           </div>
         </div>
@@ -733,102 +514,7 @@ aem up
     </div>
     <div class="message-box">Link copied!</div>
   </main>
-  <footer class="footer-wrapper appear">
-    <div class="footer block contained new-footer" data-block-name="footer" data-block-status="loaded">
-      <div class="footer-section-wrapper">
-        <div class="footer-nav-section">
-          <div class="footer-nav-wrapper desktop">
-            <div>
-              <h3 id="adobe-experience-manager"><a href="/home" target="_self"
-                  class="link-highlight-colorful-effect">Adobe Experience Manager</a></h3>
-            </div>
-            <div>
-              <h3 id="guides"><a href="/docs/" target="_self" class="link-highlight-colorful-effect">Guides</a></h3>
-              <ul>
-                <li><a href="/docs#build" target="_self" class="link-underline-effect">Build</a></li>
-                <li><a href="/docs#publish" target="_self" class="link-underline-effect">Publish</a></li>
-                <li><a href="/docs#launch" target="_self" class="link-underline-effect">Launch</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 id="resources"><a href="/docs/#resources" target="_self"
-                  class="link-highlight-colorful-effect">Resources</a></h3>
-              <ul>
-                <li><a href="/docs/sidekick" target="_self" class="link-underline-effect">Sidekick</a></li>
-                <li><a href="/docs/faq" target="_self" class="link-underline-effect">FAQ</a></li>
-                <li><a href="https://www.hlx.live/docs/admin.html" target="_blank" class="link-underline-effect">Admin
-                    API</a></li>
-                <li><a href="/docs/cdn-guide" target="_self" class="link-underline-effect">CDN Selection Guide</a></li>
-                <li><a href="https://www.aemstatus.net" target="_blank"
-                    class="link-underline-effect">www.aemstatus.net</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 id="help"><a href="/docs/" target="_self" class="link-highlight-colorful-effect">Help</a></h3>
-              <ul>
-                <li><a href="/chat" target="_blank" class="link-underline-effect">Customer Support Chat</a></li>
-                <li><a href="https://discord.gg/aem-live" target="_blank" class="link-underline-effect">Discord
-                    Community Chat</a></li>
-                <li><a href="/community" target="_self" class="link-underline-effect">AEM Community Overview</a></li>
-              </ul>
-            </div>
-            <div><a href="/business/reachout" target="_self" class="footer-cta-button button secondary">Let’s
-                Connect!</a></div>
-          </div>
-          <div class="footer-nav-wrapper mobile">
-            <div class="footer-nav-title-section">
-              <h3 id="adobe-experience-manager"><a href="/home" target="_self"
-                  class="link-highlight-colorful-effect">Adobe Experience Manager</a></h3>
-            </div>
-            <div class="footer-nav-title-section with-panel">
-              <h3 id="guides"><a href="/docs/" target="_self" class="link-highlight-colorful-effect">Guides</a></h3>
-            </div>
-            <div class="panel">
-              <ul>
-                <li><a href="/docs#build" target="_self" class="link-underline-effect">Build</a></li>
-                <li><a href="/docs#publish" target="_self" class="link-underline-effect">Publish</a></li>
-                <li><a href="/docs#launch" target="_self" class="link-underline-effect">Launch</a></li>
-              </ul>
-            </div>
-            <div class="footer-nav-title-section with-panel">
-              <h3 id="resources"><a href="/docs/#resources" target="_self"
-                  class="link-highlight-colorful-effect">Resources</a></h3>
-            </div>
-            <div class="panel">
-              <ul>
-                <li><a href="/docs/sidekick" target="_self" class="link-underline-effect">Sidekick</a></li>
-                <li><a href="/docs/faq" target="_self" class="link-underline-effect">FAQ</a></li>
-                <li><a href="https://www.hlx.live/docs/admin.html" target="_blank" class="link-underline-effect">Admin
-                    API</a></li>
-                <li><a href="/docs/cdn-guide" target="_self" class="link-underline-effect">CDN Selection Guide</a></li>
-                <li><a href="https://www.aemstatus.net" target="_blank"
-                    class="link-underline-effect">www.aemstatus.net</a></li>
-              </ul>
-            </div>
-            <div class="footer-nav-title-section with-panel">
-              <h3 id="help"><a href="/docs/" target="_self" class="link-highlight-colorful-effect">Help</a></h3>
-            </div>
-            <div class="panel">
-              <ul>
-                <li><a href="/chat" target="_blank" class="link-underline-effect">Customer Support Chat</a></li>
-                <li><a href="https://discord.gg/aem-live" target="_blank" class="link-underline-effect">Discord
-                    Community Chat</a></li>
-                <li><a href="/community" target="_self" class="link-underline-effect">AEM Community Overview</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>Copyright © 2024 Adobe. All rights reserved / 京ICP备10217899号-7</p>
-          <p><a href="https://www.adobe.com/privacy.html" target="_blank" class="link-underline-effect">Privacy</a> / <a
-              href="https://www.adobe.com/content/dam/cc/en/legal/servicetou/Experience_Cloud_TOU_en_WW_20220608.pdf"
-              target="_blank" class="link-underline-effect">Terms of Use</a> / <a
-              href="https://www.adobe.com/privacy/ca-rights.html" target="_blank" class="link-underline-effect">Do not
-              sell my personal information</a></p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <footer></footer>
 
 
   <svg xmlns="http://www.w3.org/2000/svg" id="franklin-svg-sprite" style="display: none">
@@ -838,7 +524,6 @@ aem up
         fill="currentColor"></path>
     </symbol>
   </svg>
-  <!-- <script>hljs.highlightAll();</script> -->
 </body>
 
 </html>
